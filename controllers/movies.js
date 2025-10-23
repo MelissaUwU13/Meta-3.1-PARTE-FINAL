@@ -1,6 +1,5 @@
- // controllers/movie.js
-import { movies } from "../data/movies.js";
-import { directors } from "../data/directors.js";
+import { movies } from "../datos/movies.js";
+import { directors } from "../datos/directors.js";
 
 // Obtener todas las películas
 export const getAllMovies = (req, res) => {

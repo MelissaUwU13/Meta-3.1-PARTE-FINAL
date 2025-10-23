@@ -13,10 +13,22 @@ app.use("/api/directors", directorsRoutes);
 app.use("/api/actors", actorsRoutes);
 app.use("/api/movies", movieActorsRoutes); // movieActors usa movieId en la ruta
 
+const PORT = 3000;
+
 // Manejo de errores genérico
 app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message || "Internal Server Error" });
 });
 
-app.listen(3000, () => console.log("Servidor corriendo en http://localhost:3000"));
+// Ruta base
+app.get("/", (req, res) => {
+  res.json({ message: "CineBase API - alive 🎬" });
+});
 
+
+//iniciar el servidor
+const server = app.listen(PORT,() =>{
+    console.log(`Servidor ejecutandose en http://localhost:${PORT}`)
+})
+
+server.on('error',error => console.log(`Error en el servidor: ${error}`));

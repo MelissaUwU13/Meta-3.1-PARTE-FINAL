@@ -1,7 +1,6 @@
- // controllers/actors.js
-import { actors } from "../data/actors.js";
-import { movieActors } from "../data/movieActors.js";
-import { movies } from "../data/movies.js";
+import { actors } from "../datos/actors.js";
+import { movieActors } from "../datos/movieActors.js";
+import { movies } from "../datos/movies.js";
 
 // Obtener todos los actores
 export const getAllActors = (req, res) => {

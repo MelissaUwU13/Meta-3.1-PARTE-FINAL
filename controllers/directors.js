@@ -1,6 +1,6 @@
  // controllers/directors.js
-import { directors } from "../data/directors.js";
-import { movies } from "../data/movies.js";
+import { directors } from "../datos/directors.js";
+import { movies } from "../datos/movies.js";
 
 // Obtener todos los directores
 export const getAllDirectors = (req, res) => {

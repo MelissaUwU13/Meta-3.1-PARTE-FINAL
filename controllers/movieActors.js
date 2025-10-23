@@ -1,6 +1,6 @@
-import { movieActors } from "../data/movieActors.js";
-import { movies } from "../data/movies.js";
-import { actors } from "../data/actors.js";
+import { movieActors } from "../datos/movieActors.js";
+import { movies } from "../datos/movies.js";
+import { actors } from "../datos/actors.js";
 
 // Obtener actores de una película
 export const getActorsByMovie = (req, res, next) => {
